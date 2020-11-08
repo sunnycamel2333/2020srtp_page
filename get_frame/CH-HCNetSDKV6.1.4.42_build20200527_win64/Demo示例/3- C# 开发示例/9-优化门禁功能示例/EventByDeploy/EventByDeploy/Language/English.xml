@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<EventByDeploy Language="English">
+    <Form>
+        <Name>EventByDeploy</Name>
+        <Controls>
+          <Control name="btnLogin" text="Login"/>
+          <Control name="label1" text="Event By Deploy"/>
+          <Control name="btnDeploy" text="Deploy"/>
+          <Control name="label6" text="You should select one between Client Deploy and Real Time Deploy."/>
+          <Control name="label2" text="Client Deploy means you can accept real time event and offline events."/>
+          <Control name="label3" text="Real Time Deploy means you can only accept real time events."/>
+          <Control name="label4" text="Name"/>
+          <Control name="label8" text="Employee No"/>
+          <Control name="label5" text="Card No"/>
+          <Control name="label7" text="Time"/>
+        </Controls>
+    </Form>
+    <Form>
+        <Name>AddDevice</Name>
+        <Controls>
+          <Control name="label1" text="Login Device"/>
+          <Control name="label2" text="Device Address"/>
+          <Control name="label4" text="User Name"/>
+          <Control name="label3" text="Port"/>
+          <Control name="label5" text="Password"/>
+          <Control name="btnAdd" text="Add"/>
+          <Control name="btnCancel" text="Cancel"/>
+        </Controls>
+    </Form>
+</EventByDeploy>

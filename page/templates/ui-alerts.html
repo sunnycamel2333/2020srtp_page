@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>跌倒系统设备状态修改</title>
+	<meta name="description" content="设备状态修改">
+
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="assets/images/logo.png">
+
+	<!-- Bootstrap CSS -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+	<!-- Font Awesome CSS -->
+	<link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+	<!-- Custom CSS -->
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+
+	<!-- BEGIN CSS for this page -->
+	<link rel="stylesheet" type="text/css"
+		href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap4.min.css" />
+	<!-- END CSS for this page -->
+
+</head>
+
+<body class="adminbody">
+
+	<div id="main">
+
+		<!-- top bar navigation -->
+		<div class="headerbar">
+
+			<!-- LOGO -->
+			<div class="headerbar-left">
+				<a href="index.html" class="logo"><img alt="Logo" src="logo.png" /> <span>跌倒检测系统</span></a>
+			</div>
+
+			<nav class="navbar-custom">
+
+				<ul class="list-inline float-right mb-0">
+
+					<li class="list-inline-item dropdown notif">
+						<a class="nav-link dropdown-toggle arrow-none" data-toggle="dropdown" href="#" role="button"
+							aria-haspopup="false" aria-expanded="false">
+							<i class="fa fa-fw fa-question-circle"></i>
+						</a>
+						<div
+							class="dropdown-menu dropdown-menu-right dropdown-arrow dropdown-arrow-success dropdown-lg">
+							<!-- item-->
+							<div class="dropdown-item noti-title">
+								<h5><small>帮助和支持</small></h5>
+							</div>
+
+							<!-- item-->
+							<a target="_blank" href="#" class="dropdown-item notify-item">
+								<p class="notify-details ml-0">
+									<b>Do you want custom development to integrate this theme?</b>
+									<span>联系我们</span>
+								</p>
+							</a>
+
+							<!-- item-->
+
+
+							<!-- All-->
+							<a title="Clcik to visit Pike Admin Website" target="_blank" href="#"
+								class="dropdown-item notify-item notify-all">
+								<i class="fa fa-link"></i> 跌倒检测系统
+							</a>
+
+						</div>
+					</li>
+
+					<li class="list-inline-item dropdown notif">
+						<a class="nav-link dropdown-toggle arrow-none" data-toggle="dropdown" href="#" role="button"
+							aria-haspopup="false" aria-expanded="false">
+							<i class="fa fa-fw fa-envelope-o"></i><span class="notif-bullet"></span>
+						</a>
+						<div
+							class="dropdown-menu dropdown-menu-right dropdown-arrow dropdown-arrow-success dropdown-lg">
+							<!-- item-->
+							<div class="dropdown-item noti-title">
+								<h5><small><span class="label label-danger pull-xs-right">12</span>未读消息</small></h5>
+							</div>
+
+							<!-- item-->
+							<a href="#" class="dropdown-item notify-item">
+								<p class="notify-details ml-0">
+									<b>Jokn Doe</b>
+									<span>New message received</span>
+									<small class="text-muted">2 minutes ago</small>
+								</p>
+							</a>
+
+							<!-- item-->
+							<a href="#" class="dropdown-item notify-item">
+								<p class="notify-details ml-0">
+									<b>Michael Jackson</b>
+									<span>New message received</span>
+									<small class="text-muted">15 minutes ago</small>
+								</p>
+							</a>
+
+							<!-- item-->
+							<a href="#" class="dropdown-item notify-item">
+								<p class="notify-details ml-0">
+									<b>Foxy Johnes</b>
+									<span>New message received</span>
+									<small class="text-muted">Yesterday, 13:30</small>
+								</p>
+							</a>
+
+							<!-- All-->
+							<a href="#" class="dropdown-item notify-item notify-all">
+								View All
+							</a>
+
+						</div>
+					</li>
+
+					<li class="list-inline-item dropdown notif">
+						<a class="nav-link dropdown-toggle arrow-none" data-toggle="dropdown" href="#" role="button"
+							aria-haspopup="false" aria-expanded="false">
+							<i class="fa fa-fw fa-bell-o"></i><span class="notif-bullet"></span>
+						</a>
+						<div class="dropdown-menu dropdown-menu-right dropdown-arrow dropdown-lg">
+							<!-- item-->
+							<div class="dropdown-item noti-title">
+								<h5><small><span class="label label-danger pull-xs-right">5</span>Allerts</small></h5>
+							</div>
+
+							<!-- item-->
+							<a href="#" class="dropdown-item notify-item">
+								<div class="notify-icon bg-faded">
+									<img src="assets/images/avatars/avatar2.png" alt="img"
+										class="rounded-circle img-fluid">
+								</div>
+								<p class="notify-details">
+									<b>John Doe</b>
+									<span>User registration</span>
+									<small class="text-muted">3 minutes ago</small>
+								</p>
+							</a>
+
+							<!-- item-->
+							<a href="#" class="dropdown-item notify-item">
+								<div class="notify-icon bg-faded">
+									<img src="assets/images/avatars/avatar3.png" alt="img"
+										class="rounded-circle img-fluid">
+								</div>
+								<p class="notify-details">
+									<b>Michael Cox</b>
+									<span>Task 2 completed</span>
+									<small class="text-muted">12 minutes ago</small>
+								</p>
+							</a>
+
+							<!-- item-->
+							<a href="#" class="dropdown-item notify-item">
+								<div class="notify-icon bg-faded">
+									<img src="assets/images/avatars/avatar4.png" alt="img"
+										class="rounded-circle img-fluid">
+								</div>
+								<p class="notify-details">
+									<b>Michelle Dolores</b>
+									<span>New job completed</span>
+									<small class="text-muted">35 minutes ago</small>
+								</p>
+							</a>
+
+							<!-- All-->
+							<a href="#" class="dropdown-item notify-item notify-all">
+								View All Allerts
+							</a>
+
+						</div>
+					</li>
+
+					<li class="list-inline-item dropdown notif">
+						<a class="nav-link dropdown-toggle nav-user" data-toggle="dropdown" href="#" role="button"
+							aria-haspopup="false" aria-expanded="false">
+							<img src="assets/images/avatars/admin.png" alt="Profile image" class="avatar-rounded">
+						</a>
+						<div class="dropdown-menu dropdown-menu-right profile-dropdown ">
+							<!-- item-->
+							<div class="dropdown-item noti-title">
+								<h5 class="text-overflow"><small>您好，管理员</small> </h5>
+							</div>
+
+							<!-- item-->
+							<a href="pro-profile.html" class="dropdown-item notify-item">
+								<i class="fa fa-user"></i> <span>个人信息</span>
+							</a>
+
+							<!-- item-->
+							<a href="#" class="dropdown-item notify-item">
+								<i class="fa fa-power-off"></i> <span>登出</span>
+							</a>
+
+							<!-- item-->
+							<a target="_blank" href="#" class="dropdown-item notify-item">
+								<i class="fa fa-external-link"></i> <span>跌倒检测系统</span>
+							</a>
+						</div>
+					</li>
+
+				</ul>
+
+				<ul class="list-inline menu-left mb-0">
+					<li class="float-left">
+						<button class="button-menu-mobile open-left">
+							<i class="fa fa-fw fa-bars"></i>
+						</button>
+					</li>
+				</ul>
+
+			</nav>
+
+		</div>
+		<!-- End Navigation -->
+
+
+		<!-- Left Sidebar -->
+		<div class="left main-sidebar">
+
+			<div class="sidebar-inner leftscroll">
+
+				<div id="sidebar-menu">
+
+					<ul>
+
+						<li class="submenu">
+							<a class="active" href="host.html"><i class="fa fa-fw fa-bars"></i><span> &nbsp;数据面板&nbsp;
+								</span> </a>
+						</li>
+
+						<li class="submenu">
+							<a href="index.html"><i class="fa fa-fw fa-area-chart"></i><span> &nbsp;跌倒预警&nbsp;
+								</span> </a>
+						</li>
+
+
+						<li class="submenu">
+							<a href="#"><i class="fa fa-fw fa-tv"></i> <span> 用户信息 </span> <span
+									class="menu-arrow"></span></a>
+							<ul class="list-unstyled">
+								<li><a href="charts.html">用户信息</a></li>
+								<li><a href="tables-basic.html">设备运行环境信息</a></li>
+
+							</ul>
+						</li>
+						<li class="submenu">
+							<a href="#"><i class="fa fa-fw fa-table"></i>&nbsp;系统管理 <span> &nbsp; </span> <span
+									class="menu-arrow"></span></a>
+							<ul class="list-unstyled">
+								<li><a href="ui-cards.html">用户权限管理</a></li>
+								<li><a href="ui-alerts.html">设备运行环境设置</a></li>
+							</ul>
+						</li>
+
+						
+					</ul>
+
+					<div class="clearfix"></div>
+
+				</div>
+
+				<div class="clearfix"></div>
+
+			</div>
+
+		</div>
+		<!-- End Sidebar -->
+
+		<div class="content-page">
+
+			<!-- Start content -->
+			<div class="content">
+
+				<div class="container-fluid">
+
+
+
+					<div class="row">
+						<div class="col-xl-12">
+							<div class="breadcrumb-holder">
+								<h1 class="main-title float-left">&nbsp;</h1>
+								<ol class="breadcrumb float-right">
+									<li class="breadcrumb-item">信息修改&nbsp;</li>
+									<li class="breadcrumb-item active">设备状态&nbsp;</li>
+								</ol>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					</div>
+					<!-- end row -->
+
+
+					<div class="row">
+
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+							<form action="/demo/demo_form.asp">
+								<fieldset>
+									<legend>设备状态修改</legend>
+									环境光照适应
+									<input type="text" name="firstname" value="中等强度光照">
+									<br>
+									<p></p>
+									设备检测主题数
+									<input type="text" name="lastname" value="1">
+									<br>
+									<p></p>
+									摄像头固定角度
+									<input type="text" name="firstname" value="平视">
+									<br>
+									<p></p>
+									<input type="submit" value="确定修改" class="button">
+								</fieldset>
+							</form>
+						</div><!-- end card-->
+					</div>
+
+
+				</div>
+
+
+
+
+
+
+
+
+
+
+			</div>
+			<!-- END container-fluid -->
+
+		</div>
+		<!-- END content -->
+
+	</div>
+	<!-- END content-page -->
+
+	<footer class="footer">
+		<span class="text-right">
+			Copyright <a target="_blank" href="#">xddhotel.cn&nbsp;</a>
+		</span>
+		<span class="float-right">
+			小叮当科技<a href="http://www.cssmoban.com/" title="" target="_blank">&nbsp;</a> </span>
+	</footer>
+
+	</div>
+	<!-- END main -->
+
+	<script src="assets/js/modernizr.min.js"></script>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/moment.min.js"></script>
+
+	<script src="assets/js/popper.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+
+	<script src="assets/js/detect.js"></script>
+	<script src="assets/js/fastclick.js"></script>
+	<script src="assets/js/jquery.blockUI.js"></script>
+	<script src="assets/js/jquery.nicescroll.js"></script>
+
+	<!-- App js -->
+	<script src="assets/js/pikeadmin.js"></script>
+
+	<!-- BEGIN Java Script for this page -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+
+	<script>
+		// barChart
+		var ctx1 = document.getElementById("barChart").getContext('2d');
+		var barChart = new Chart(ctx1, {
+			type: 'bar',
+			data: {
+				labels: ["游泳馆", "羽毛球馆", "spa", "网球场", "高尔夫球场", "咖啡馆", "露营地", "茶馆", "温泉疗养馆", "瑜伽馆"],
+				datasets: [{
+					label: '容纳百分比',
+					data: [50, 90, 30, 80, 10, 5, 13, 17, 30, 15],
+					backgroundColor: [
+						'rgba(255, 99, 132, 0.2)',
+						'rgba(54, 162, 235, 0.2)',
+						'rgba(255, 206, 86, 0.2)',
+						'rgba(75, 192, 192, 0.2)',
+						'rgba(153, 102, 255, 0.2)',
+						'rgba(255, 159, 64, 0.2)',
+						'rgba(255, 99, 132, 0.2)',
+						'rgba(54, 162, 235, 0.2)',
+						'rgba(255, 206, 86, 0.2)',
+						'rgba(75, 192, 192, 0.2)',
+					],
+					borderColor: [
+						'rgba(255,99,132,1)',
+						'rgba(54, 162, 235, 1)',
+						'rgba(255, 206, 86, 1)',
+						'rgba(75, 192, 192, 1)',
+						'rgba(153, 102, 255, 1)',
+						'rgba(255, 159, 64, 1)',
+						'rgba(255,99,132,1)',
+						'rgba(54, 162, 235, 1)',
+						'rgba(255, 206, 86, 1)',
+						'rgba(75, 192, 192, 1)',
+
+					],
+					borderWidth: 1
+				}]
+			},
+			options: {
+				scales: {
+					yAxes: [{
+						ticks: {
+							beginAtZero: true
+						}
+					}]
+				}
+			}
+		});
+
+		// comboBarLineChart
+		var ctx2 = document.getElementById("comboBarLineChart_swim").getContext('2d');
+		var comboBarLineChart_swim = new Chart(ctx2, {
+			type: 'bar',
+			data: {
+				labels: ["9：00", "10：00", "11：00", "12：00", "13：00", "14：00", "15：00", "16：00", "17：00", "18：00", "19：00", "20：00"],
+				datasets: [{
+					type: 'line',
+					label: '昨日数据',
+					borderColor: '#484c4f',
+					borderWidth: 2,
+					fill: false,
+					data: [12, 19, 3, 5, 2, 3, 13, 17, 11, 8, 11, 9],
+				}, {
+					type: 'bar',
+					label: '周平均',
+					backgroundColor: '#FF6B8A',
+					data: [10, 11, 7, 5, 9, 13, 10, 16, 7, 8, 12, 5],
+					borderColor: 'white',
+					borderWidth: 0
+				}],
+				borderWidth: 1
+			},
+			options: {
+				scales: {
+					yAxes: [{
+						ticks: {
+							beginAtZero: true
+						}
+					}]
+				}
+			}
+		});
+
+
+		var add1 = document.getElementById("comboBarLineChart_tenis").getContext('2d');
+		var comboBarLineChart_tenis = new Chart(add1, {
+			type: 'bar',
+			data: {
+				labels: ["9：00", "10：00", "11：00", "12：00", "13：00", "14：00", "15：00", "16：00", "17：00", "18：00", "19：00", "20：00"],
+				datasets: [{
+					type: 'line',
+					label: '昨日数据',
+					borderColor: '#484c4f',
+					borderWidth: 2,
+					fill: false,
+					data: [3, 20, 19, 30, 40, 45, 67, 20, 11, 9, 8, 2],
+				}, {
+					type: 'bar',
+					label: '周平均',
+					backgroundColor: 'rgba(235, 106, 86, 1)',
+					data: [5, 15, 18, 29, 40, 45, 69, 19, 13, 8, 8, 1],
+					borderColor: 'white',
+					borderWidth: 0
+				}],
+				borderWidth: 1
+			},
+			options: {
+				scales: {
+					yAxes: [{
+						ticks: {
+							beginAtZero: true
+						}
+					}]
+				}
+			}
+		});
+
+		var add2 = document.getElementById("comboBarLineChart_golf").getContext('2d');
+		var comboBarLineChart_golf = new Chart(add2, {
+			type: 'bar',
+			data: {
+				labels: ["9：00", "10：00", "11：00", "12：00", "13：00", "14：00", "15：00", "16：00", "17：00", "18：00", "19：00", "20：00"],
+				datasets: [{
+					type: 'line',
+					label: '昨日数据',
+					borderColor: '#484c4f',
+					borderWidth: 2,
+					fill: false,
+					data: [3, 5, 12, 19, 16, 19, 40, 12, 11, 8, 2, 1],
+				}, {
+					type: 'bar',
+					label: '周平均',
+					backgroundColor: 'rgba(153, 102, 255, 1)',
+					data: [3, 5, 12, 19, 13, 19, 42, 12, 11, 9, 2, 1],
+					borderColor: 'white',
+					borderWidth: 0
+				}],
+				borderWidth: 1
+			},
+			options: {
+				scales: {
+					yAxes: [{
+						ticks: {
+							beginAtZero: true
+						}
+					}]
+				}
+			}
+		});
+
+		var add3 = document.getElementById("comboBarLineChart_spa").getContext('2d');
+		var comboBarLineChart_spa = new Chart(add3, {
+			type: 'bar',
+			data: {
+				labels: ["9：00", "10：00", "11：00", "12：00", "13：00", "14：00", "15：00", "16：00", "17：00", "18：00", "19：00", "20：00"],
+				datasets: [{
+					type: 'line',
+					label: '昨日数据',
+					borderColor: '#484c4f',
+					borderWidth: 2,
+					fill: false,
+					data: [3, 5, 12, 19, 16, 19, 10, 12, 11, 56, 72, 80],
+				}, {
+					type: 'bar',
+					label: '周平均',
+					backgroundColor: 'rgba(255, 159, 64, 1)',
+					data: [3, 5, 12, 19, 13, 19, 12, 12, 15, 52, 71, 79],
+					borderColor: 'white',
+					borderWidth: 0
+				}],
+				borderWidth: 1
+			},
+			options: {
+				scales: {
+					yAxes: [{
+						ticks: {
+							beginAtZero: true
+						}
+					}]
+				}
+			}
+		});
+
+		var add4 = document.getElementById("comboBarLineChart_coffe").getContext('2d');
+		var comboBarLineChart_coffe = new Chart(add4, {
+			type: 'bar',
+			data: {
+				labels: ["9：00", "10：00", "11：00", "12：00", "13：00", "14：00", "15：00", "16：00", "17：00", "18：00", "19：00", "20：00"],
+				datasets: [{
+					type: 'line',
+					label: '昨日数据',
+					borderColor: '#484c4f',
+					borderWidth: 2,
+					fill: false,
+					data: [31, 30, 23, 15, 12, 13, 23, 27, 31, 38, 11, 3],
+				}, {
+					type: 'bar',
+					label: '周平均',
+					backgroundColor: 'rgba(255, 206, 86, 1)',
+					data: [30, 30, 27, 12, 13, 15, 24, 26, 30, 38, 11, 2],
+					borderColor: 'white',
+					borderWidth: 0
+				}],
+				borderWidth: 1
+			},
+			options: {
+				scales: {
+					yAxes: [{
+						ticks: {
+							beginAtZero: true
+						}
+					}]
+				}
+			}
+		});
+
+		var add5 = document.getElementById("comboBarLineChart_camp").getContext('2d');
+		var comboBarLineChart_camp = new Chart(add5, {
+			type: 'bar',
+			data: {
+				labels: ["9：00", "10：00", "11：00", "12：00", "13：00", "14：00", "15：00", "16：00", "17：00", "18：00", "19：00", "20：00"],
+				datasets: [{
+					type: 'line',
+					label: '昨日数据',
+					borderColor: '#484c4f',
+					borderWidth: 2,
+					fill: false,
+					data: [2, 9, 13, 15, 12, 13, 23, 17, 21, 18, 11, 19],
+				}, {
+					type: 'bar',
+					label: '周平均',
+					backgroundColor: 'rgba(54, 162, 235, 1)',
+					data: [3, 9, 13, 15, 10, 13, 23, 16, 20, 15, 11, 16],
+					borderColor: 'white',
+					borderWidth: 0
+				}],
+				borderWidth: 1
+			},
+			options: {
+				scales: {
+					yAxes: [{
+						ticks: {
+							beginAtZero: true
+						}
+					}]
+				}
+			}
+		});
+
+		var add6 = document.getElementById("comboBarLineChart_yoga").getContext('2d');
+		var comboBarLineChart_yoga = new Chart(add6, {
+			type: 'bar',
+			data: {
+				labels: ["9：00", "10：00", "11：00", "12：00", "13：00", "14：00", "15：00", "16：00", "17：00", "18：00", "19：00", "20：00"],
+				datasets: [{
+					type: 'line',
+					label: '昨日数据',
+					borderColor: '#484c4f',
+					borderWidth: 2,
+					fill: false,
+					data: [12, 19, 3, 5, 2, 3, 13, 17, 11, 8, 11, 9],
+				}, {
+					type: 'bar',
+					label: '周平均',
+					backgroundColor: '#FF6B8A',
+					data: [10, 11, 7, 5, 9, 13, 10, 16, 7, 8, 12, 5],
+					borderColor: 'white',
+					borderWidth: 0
+				}],
+				borderWidth: 1
+			},
+			options: {
+				scales: {
+					yAxes: [{
+						ticks: {
+							beginAtZero: true
+						}
+					}]
+				}
+			}
+		});
+		var add7 = document.getElementById("comboBarLineChart_tea").getContext('2d');
+		var comboBarLineChart_tea = new Chart(add7, {
+			type: 'bar',
+			data: {
+				labels: ["9：00", "10：00", "11：00", "12：00", "13：00", "14：00", "15：00", "16：00", "17：00", "18：00", "19：00", "20：00"],
+				datasets: [{
+					type: 'line',
+					label: '昨日数据',
+					borderColor: '#484c4f',
+					borderWidth: 2,
+					fill: false,
+					data: [21, 39, 43, 55, 62, 43, 33, 37, 31, 28, 15, 3],
+				}, {
+					type: 'bar',
+					label: '周平均',
+					backgroundColor: 'rgba(56, 112, 225, 1)',
+					data: [23, 39, 45, 53, 63, 45, 31, 37, 30, 27, 13, 2],
+					borderColor: 'white',
+					borderWidth: 0
+				}],
+				borderWidth: 1
+			},
+			options: {
+				scales: {
+					yAxes: [{
+						ticks: {
+							beginAtZero: true
+						}
+					}]
+				}
+			}
+		});
+
+		// pieChart
+		var ctx3 = document.getElementById("pieChart").getContext('2d');
+		var pieChart = new Chart(ctx3, {
+			type: 'pie',
+			data: {
+				datasets: [{
+					data: [11, 19, 10, 15, 12, 20, 6, 6],
+					backgroundColor: [
+						'rgba(255,99,132,1)',
+						'rgba(54, 162, 235, 1)',
+						'rgba(255, 206, 86, 1)',
+						'rgba(75, 192, 192, 1)',
+						'rgba(153, 102, 255, 1)',
+						'rgba(255, 159, 64, 1)',
+						'rgba(105, 122, 122, 1)',
+						'rgba(54, 112, 115, 1)',
+					],
+					label: '场馆可容纳人数'
+				}],
+				labels: [
+					"网球场",
+					"高尔夫球场",
+					"瑜伽馆",
+					"咖啡厅",
+					"游泳馆",
+					"spa",
+					"露营地",
+					"网球场"
+				]
+			},
+			options: {
+				responsive: true
+			}
+
+		});
+
+		// doughnutChart
+		var ctx4 = document.getElementById("doughnutChart").getContext('2d');
+		var doughnutChart = new Chart(ctx4, {
+			type: 'doughnut',
+			data: {
+				datasets: [{
+					data: [12, 19, 3, 5, 2],
+					backgroundColor: [
+						'rgba(255,99,132,1)',
+						'rgba(54, 162, 235, 1)',
+						'rgba(255, 206, 86, 1)',
+						'rgba(75, 192, 192, 1)',
+						'rgba(153, 102, 255, 1)'
+					],
+					label: '人气Top5'
+				}],
+				labels: [
+					"网球场",
+					"spa",
+					"高尔夫",
+					"咖啡厅",
+					"游泳馆"
+				]
+			},
+			options: {
+				responsive: true
+			}
+
+		});
+
+
+		var ctx5 = document.getElementById("pieChart2").getContext('2d');
+		var pieChart = new Chart(ctx5, {
+			type: 'pie',
+			data: {
+				datasets: [{
+					data: [11, 19, 10, 15, 12, 20, 6, 6],
+					backgroundColor: [
+						'rgba(255,99,132,1)',
+						'rgba(54, 162, 235, 1)',
+						'rgba(255, 206, 86, 1)',
+						'rgba(75, 192, 192, 1)',
+						'rgba(153, 102, 255, 1)',
+						'rgba(255, 159, 64, 1)',
+						'rgba(105, 122, 122, 1)',
+						'rgba(54, 112, 115, 1)',
+					],
+					label: '场馆可容纳人数'
+				}],
+				labels: [
+					"网球场",
+					"高尔夫球场",
+					"瑜伽馆",
+					"咖啡厅",
+					"游泳馆",
+					"spa",
+					"露营地",
+					"网球场"
+				]
+			},
+			options: {
+				responsive: true
+			}
+
+		});
+
+
+
+	</script>
+	<!-- END Java Script for this page -->
+	<style>
+		.button {
+
+			background: #E27575;
+
+			border: none;
+
+			padding: 10px 25px 10px 25px;
+
+			color: #FFF;
+
+			box-shadow: 1px 1px 5px #B6B6B6;
+
+			border-radius: 3px;
+
+			text-shadow: 1px 1px 1px #9E3F3F;
+
+			cursor: pointer;
+
+		}
+
+		.basic-grey .button:hover {
+
+			background: #CF7A7A
+		}
+	</style>
+</body>
+
+</html>

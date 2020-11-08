@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>跌倒检测系统-用户登录</title>
+<meta name="Keywords" content="网站关键词">
+<meta name="Description" content="网站介绍">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/iconfont.css">
+<link rel="stylesheet" href="css/reg.css">
+</head>
+<body>
+<div id="ajax-hook">
+</div>
+<div class="wrap">
+	<div class="wpn">
+		<div class="form-data pos">
+			<a href="login.html"><img src="logo.png" class="head-logo"></a>
+			<div class="change-login">
+				<p class="account_number on">
+					账号登录
+				</p>
+				
+			</div>
+			<div class="form1">
+				<p class="p-input pos">
+					<label for="num" style="">手机号/用户名/UID/邮箱</label>
+					<input type="text" id="num">
+					<span class="tel-warn num-err hide"><em>账号或密码错误，请重新输入</em><i class="icon-warn"></i></span>
+				</p>
+				<p class="p-input pos">
+					<label for="pass" style="">请输入密码</label>
+					<input type="password" style="display:none">
+					<input type="password" id="pass" autocomplete="new-password">
+					<span class="tel-warn pass-err hide"><em>账号或密码错误，请重新输入</em><i class="icon-warn"></i></span>
+				</p>
+				<p class="p-input pos code hide">
+					<label for="veri">请输入验证码</label>
+					<input type="text" id="veri">
+					<img src="login.html">
+					<span class="tel-warn img-err hide"><em>账号或密码错误，请重新输入</em><i class="icon-warn"></i></span>
+					<!-- <a href="javascript:;">换一换</a> -->
+				</p>
+			</div>
+			
+			<div class="r-forget cl">
+				<a href="reg.html" class="z">账号注册</a>
+				<a href="getpass.html" class="y">忘记密码</a>
+			</div>
+			<button class="lang-btn off log-btn" ><a href="index.html">登录</a></button>
+			<div class="third-party">
+				<a href="javascript:;" class="log-qq icon-qq-round"></a>
+				<a href="javascript:;" class="log-qq icon-weixin"></a>
+				<a href="javascript:;" class="log-qq icon-sina1"></a>
+			</div>
+			<p class="right">
+				Powered by © 2020 基于计算机视觉识别技术的老人防跌倒检测系统
+			</p>
+		</div>
+	</div>
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/agree.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>

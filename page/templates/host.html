@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>跌倒系统首页</title>
+	<meta name="description" content="首页">
+
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="assets/images/logo.png">
+
+	<!-- Bootstrap CSS -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+	<!-- Font Awesome CSS -->
+	<link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+	<!-- Custom CSS -->
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+
+	<!-- BEGIN CSS for this page -->
+	<link rel="stylesheet" type="text/css"
+		href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap4.min.css" />
+	<!-- END CSS for this page -->
+
+</head>
+
+<body class="adminbody">
+
+	<div id="main">
+
+		<!-- top bar navigation -->
+		<div class="headerbar">
+
+			<!-- LOGO -->
+			<div class="headerbar-left">
+				<a href="index.html" class="logo"><img alt="Logo" src="logo.png" /> <span>跌倒检测系统</span></a>
+			</div>
+
+			<nav class="navbar-custom">
+
+				<ul class="list-inline float-right mb-0">
+
+					<li class="list-inline-item dropdown notif">
+						<a class="nav-link dropdown-toggle arrow-none" data-toggle="dropdown" href="#" role="button"
+							aria-haspopup="false" aria-expanded="false">
+							<i class="fa fa-fw fa-question-circle"></i>
+						</a>
+						<div
+							class="dropdown-menu dropdown-menu-right dropdown-arrow dropdown-arrow-success dropdown-lg">
+							<!-- item-->
+							<div class="dropdown-item noti-title">
+								<h5><small>帮助和支持</small></h5>
+							</div>
+
+							<!-- item-->
+							<a target="_blank" href="#" class="dropdown-item notify-item">
+								<p class="notify-details ml-0">
+									<b>Do you want custom development to integrate this theme?</b>
+									<span>联系我们</span>
+								</p>
+							</a>
+
+							<!-- item-->
+
+
+							<!-- All-->
+							<a title="Clcik to visit Pike Admin Website" target="_blank" href="#"
+								class="dropdown-item notify-item notify-all">
+								<i class="fa fa-link"></i> 跌倒检测系统
+							</a>
+
+						</div>
+					</li>
+
+					<li class="list-inline-item dropdown notif">
+						<a class="nav-link dropdown-toggle arrow-none" data-toggle="dropdown" href="#" role="button"
+							aria-haspopup="false" aria-expanded="false">
+							<i class="fa fa-fw fa-envelope-o"></i><span class="notif-bullet"></span>
+						</a>
+						<div
+							class="dropdown-menu dropdown-menu-right dropdown-arrow dropdown-arrow-success dropdown-lg">
+							<!-- item-->
+							<div class="dropdown-item noti-title">
+								<h5><small><span class="label label-danger pull-xs-right">12</span>未读消息</small></h5>
+							</div>
+
+							<!-- item-->
+							<a href="#" class="dropdown-item notify-item">
+								<p class="notify-details ml-0">
+									<b>Jokn Doe</b>
+									<span>New message received</span>
+									<small class="text-muted">2 minutes ago</small>
+								</p>
+							</a>
+
+							<!-- item-->
+							<a href="#" class="dropdown-item notify-item">
+								<p class="notify-details ml-0">
+									<b>Michael Jackson</b>
+									<span>New message received</span>
+									<small class="text-muted">15 minutes ago</small>
+								</p>
+							</a>
+
+							<!-- item-->
+							<a href="#" class="dropdown-item notify-item">
+								<p class="notify-details ml-0">
+									<b>Foxy Johnes</b>
+									<span>New message received</span>
+									<small class="text-muted">Yesterday, 13:30</small>
+								</p>
+							</a>
+
+							<!-- All-->
+							<a href="#" class="dropdown-item notify-item notify-all">
+								View All
+							</a>
+
+						</div>
+					</li>
+
+					<li class="list-inline-item dropdown notif">
+						<a class="nav-link dropdown-toggle arrow-none" data-toggle="dropdown" href="#" role="button"
+							aria-haspopup="false" aria-expanded="false">
+							<i class="fa fa-fw fa-bell-o"></i><span class="notif-bullet"></span>
+						</a>
+						<div class="dropdown-menu dropdown-menu-right dropdown-arrow dropdown-lg">
+							<!-- item-->
+							<div class="dropdown-item noti-title">
+								<h5><small><span class="label label-danger pull-xs-right">5</span>Allerts</small></h5>
+							</div>
+
+							<!-- item-->
+							<a href="#" class="dropdown-item notify-item">
+								<div class="notify-icon bg-faded">
+									<img src="assets/images/avatars/avatar2.png" alt="img"
+										class="rounded-circle img-fluid">
+								</div>
+								<p class="notify-details">
+									<b>John Doe</b>
+									<span>User registration</span>
+									<small class="text-muted">3 minutes ago</small>
+								</p>
+							</a>
+
+							<!-- item-->
+							<a href="#" class="dropdown-item notify-item">
+								<div class="notify-icon bg-faded">
+									<img src="assets/images/avatars/avatar3.png" alt="img"
+										class="rounded-circle img-fluid">
+								</div>
+								<p class="notify-details">
+									<b>Michael Cox</b>
+									<span>Task 2 completed</span>
+									<small class="text-muted">12 minutes ago</small>
+								</p>
+							</a>
+
+							<!-- item-->
+							<a href="#" class="dropdown-item notify-item">
+								<div class="notify-icon bg-faded">
+									<img src="assets/images/avatars/avatar4.png" alt="img"
+										class="rounded-circle img-fluid">
+								</div>
+								<p class="notify-details">
+									<b>Michelle Dolores</b>
+									<span>New job completed</span>
+									<small class="text-muted">35 minutes ago</small>
+								</p>
+							</a>
+
+							<!-- All-->
+							<a href="#" class="dropdown-item notify-item notify-all">
+								View All Allerts
+							</a>
+
+						</div>
+					</li>
+
+					<li class="list-inline-item dropdown notif">
+						<a class="nav-link dropdown-toggle nav-user" data-toggle="dropdown" href="#" role="button"
+							aria-haspopup="false" aria-expanded="false">
+							<img src="assets/images/avatars/admin.png" alt="Profile image" class="avatar-rounded">
+						</a>
+						<div class="dropdown-menu dropdown-menu-right profile-dropdown ">
+							<!-- item-->
+							<div class="dropdown-item noti-title">
+								<h5 class="text-overflow"><small>您好，管理员</small> </h5>
+							</div>
+
+							<!-- item-->
+							<a href="pro-profile.html" class="dropdown-item notify-item">
+								<i class="fa fa-user"></i> <span>个人信息</span>
+							</a>
+
+							<!-- item-->
+							<a href="#" class="dropdown-item notify-item">
+								<i class="fa fa-power-off"></i> <span>登出</span>
+							</a>
+
+							<!-- item-->
+							<a target="_blank" href="#" class="dropdown-item notify-item">
+								<i class="fa fa-external-link"></i> <span>跌倒检测系统</span>
+							</a>
+						</div>
+					</li>
+
+				</ul>
+
+				<ul class="list-inline menu-left mb-0">
+					<li class="float-left">
+						<button class="button-menu-mobile open-left">
+							<i class="fa fa-fw fa-bars"></i>
+						</button>
+					</li>
+				</ul>
+
+			</nav>
+
+		</div>
+		<!-- End Navigation -->
+
+
+		<!-- Left Sidebar -->
+		<div class="left main-sidebar">
+
+			<div class="sidebar-inner leftscroll">
+
+				<div id="sidebar-menu">
+
+					<ul>
+
+						<li class="submenu">
+							<a class="active" href="host.html"><i class="fa fa-fw fa-bars"></i><span> &nbsp;数据面板&nbsp;
+								</span> </a>
+						</li>
+
+						<li class="submenu">
+							<a href="host.html"><i class="fa fa-fw fa-area-chart"></i><span> &nbsp;跌倒预警&nbsp;
+								</span> </a>
+						</li>
+
+
+						<li class="submenu">
+							<a href="#"><i class="fa fa-fw fa-tv"></i> <span> 用户信息 </span> <span
+									class="menu-arrow"></span></a>
+							<ul class="list-unstyled">
+								<li><a href="charts.html">用户信息</a></li>
+								<li><a href="tables-basic.html">设备运行环境信息</a></li>
+
+							</ul>
+						</li>
+						<li class="submenu">
+							<a href="#"><i class="fa fa-fw fa-table"></i>&nbsp;系统管理 <span> &nbsp; </span> <span
+									class="menu-arrow"></span></a>
+							<ul class="list-unstyled">
+								<li><a href="ui-cards.html">用户权限管理</a></li>
+								<li><a href="ui-alerts.html">设备运行环境设置</a></li>
+							</ul>
+						</li>
+
+						
+					</ul>
+
+					<div class="clearfix"></div>
+
+				</div>
+
+				<div class="clearfix"></div>
+
+			</div>
+
+		</div>
+		<!-- End Sidebar -->
+
+
+		<div class="content-page">
+
+			<!-- Start content -->
+			<div class="content">
+
+				<div class="container-fluid">
+
+					<div class="row">
+						<div class="col-xl-12">
+							<div class="breadcrumb-holder">
+								<h1 class="main-title float-left">数据面板&nbsp;</h1>
+								<ol class="breadcrumb float-right">
+									<li class="breadcrumb-item">跌倒检测系统&nbsp;</li>
+									<li class="breadcrumb-item active">数据面板&nbsp;</li>
+								</ol>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					</div>
+					<!-- end row -->
+
+
+
+					<div class="row">
+						<div class="col-xs-12 col-md-6 col-lg-6 col-xl-3">
+							<div class="card-box noradius noborder bg-default">
+								<i class="fa fa-file-text-o float-right text-white"></i>
+								<h6 class="text-white text-uppercase m-b-20">网站访问量</h6>
+								<h1 class="m-b-20 text-white counter">123</h1>
+								<span class="text-white">上次登录时间：2020/10/24&nbsp;</span>
+							</div>
+						</div>
+
+						<div class="col-xs-12 col-md-6 col-lg-6 col-xl-3">
+							<div class="card-box noradius noborder bg-warning">
+								<i class="fa fa-bar-chart float-right text-white"></i>
+								<h6 class="text-white text-uppercase m-b-20">系统运行故障数</h6>
+								<h1 class="m-b-20 text-white counter">0</h1>
+								<span class="text-white">设备运行状态良好</span>
+							</div>
+						</div>
+
+						<div class="col-xs-12 col-md-6 col-lg-6 col-xl-3">
+							<div class="card-box noradius noborder bg-info">
+								<i class="fa fa-user-o float-right text-white"></i>
+								<h6 class="text-white text-uppercase m-b-20">检测对象</h6>
+								<h1 class="m-b-20 text-white counter">1</h1>
+								<span class="text-white">检测对象共1人&nbsp;</span>
+							</div>
+						</div>
+
+						<div class="col-xs-12 col-md-6 col-lg-6 col-xl-3">
+							<div class="card-box noradius noborder bg-danger">
+								<i class="fa fa-bell-o float-right text-white"></i>
+								<h6 class="text-white text-uppercase m-b-20">跌倒警报</h6>
+								<h1 class="m-b-20 text-white counter">0</h1>
+								<span class="text-white">尚无警报</span>
+							</div>
+						</div>
+					</div>
+					<!-- end row -->
+
+					<div class="row">
+
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+							<div class="card mb-3">
+								<div class="card-header">
+									<h3><i class="fa fa-users"></i> 检测对象详细情况</h3>
+
+								</div>
+
+								<div class="card-body">
+
+									<div class="card-body">
+
+										<div class="alert alert-primary" role="alert">
+											<p><i class="fa fa-bookmark bigfonts"></i> 姓名：哆啦美</p>
+											<p><i class="fa fa-calendar bigfonts"></i>&nbsp; 年龄：65</p>
+											<p><i class="fa fa-address-card-o bigfonts bigfonts"></i>&nbsp; &nbsp;性别：女
+											</p>
+											<p><i class="fa fa-comments-o bigfonts"></i>&nbsp;联系方式：19000000</p>
+											<p><i class="fa fa-bookmark bigfonts"></i>&nbsp; &nbsp;监护人：小叮当</p>
+											<p><i class="fa fa-bookmark bigfonts"></i>&nbsp; &nbsp;与被监护人关系：兄妹</p>
+											<p><i class="fa fa-bookmark bigfonts"></i>&nbsp; &nbsp;监护人联系方式：160000000</p>
+										</div>
+									</div>
+								</div>
+							</div><!-- end card-->
+						</div>
+
+
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-3">
+							<div class="card mb-3">
+								<div class="card-header">
+									<h3><i class="fa fa-star-o"></i> 设备运行情况</h3>
+
+								</div>
+
+								<div class="card-body">
+									<div class="m-b-20"></div>
+
+									<p class="font-600 m-b-5">设备电量 <span
+											class="text-primary pull-right"><b>100%</b></span></p>
+									<div class="progress">
+										<div class="progress-bar progress-bar-striped progress-xs bg-primary"
+											role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+									<div class="m-b-20"></div>
+
+									<p class="font-600 m-b-5">环境光照比<span class="text-info pull-right"><b>75%</b></span>
+									</p>
+									<div class="progress">
+										<div class="progress-bar progress-bar-striped progress-xs bg-info"
+											role="progressbar" style="width: 78%" aria-valuenow="75" aria-valuemin="0"
+											aria-valuemax="75"></div>
+									</div>
+
+									<div class="m-b-20"></div>
+									<p class="font-600 m-b-5">设备运行情况良好 </p>
+
+								</div>
+
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-3">
+							<div class="card mb-3">
+								<div class="card-header">
+									<h3><i class="fa fa-envelope-o"></i> 设备维护</h3>
+
+								</div>
+
+								<div class="card-body">
+
+									<div class="widget-messages nicescroll" style="height: 400px;">
+										<a href="#"> </a>
+										<a href="#">
+											<div class="message-item">
+												<div class="message-user-img"><img
+														src="assets/images/avatars/avatar5.png" class="avatar-circle"
+														alt=""></div>
+												<p class="message-item-user">yzh&nbsp;</p>
+												<p class="message-item-msg">tel:190000000</p>
+												<p class="message-item-date">产品设计师</p>
+											</div>
+										</a>
+										<a href="#">
+											<div class="message-item">
+												<div class="message-user-img"><img
+														src="assets/images/avatars/avatar6.png" class="avatar-circle"
+														alt=""></div>
+												<p class="message-item-user">bishop</p>
+												<p class="message-item-msg">tel:130000000</p>
+												<p class="message-item-date">产品设计师</p>
+											</div>
+										</a>
+										<a href="#">
+											<div class="message-item">
+												<div class="message-user-img"><img
+														src="assets/images/avatars/avatar10.png" class="avatar-circle"
+														alt=""></div>
+												<p class="message-item-user">lkk</p>
+												<p class="message-item-msg">180000000</p>
+												<p class="message-item-date">售后维修员</p>
+											</div>
+										</a>
+										<a href="#">
+											<div class="message-item">
+												<div class="message-user-img"><img
+														src="assets/images/avatars/avatar2.png" class="avatar-circle"
+														alt=""></div>
+												<p class="message-item-user">zyp</p>
+												<p class="message-item-msg">130000000</p>
+												<p class="message-item-date">产品顾问</p>
+											</div>
+										</a>
+										<a href="#">
+											<div class="message-item">
+												<div class="message-user-img"><img
+														src="assets/images/avatars/avatar5.png" class="avatar-circle"
+														alt=""></div>
+												<p class="message-item-user">zyc</p>
+												<p class="message-item-msg">13000000</p>
+												<p class="message-item-date">产品经理</p>
+											</div>
+										</a>
+
+									</div>
+
+								</div>
+								<div class="card-footer small text-muted">Updated today at 11:59 PM</div>
+							</div><!-- end card-->
+						</div>
+
+					</div>
+
+
+
+				</div>
+				<!-- END container-fluid -->
+
+			</div>
+			<!-- END content -->
+
+		</div>
+		<!-- END content-page -->
+
+		<footer class="footer">
+			<span class="text-right">
+				Copyright <a target="_blank" href="#">xddtech.cn</a>
+			</span>
+			<span class="float-right">
+				跌倒检测系统
+			</span>
+		</footer>
+
+	</div>
+	<!-- END main -->
+
+	<script src="assets/js/modernizr.min.js"></script>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/moment.min.js"></script>
+
+	<script src="assets/js/popper.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+
+	<script src="assets/js/detect.js"></script>
+	<script src="assets/js/fastclick.js"></script>
+	<script src="assets/js/jquery.blockUI.js"></script>
+	<script src="assets/js/jquery.nicescroll.js"></script>
+
+	<!-- App js -->
+	<script src="assets/js/pikeadmin.js"></script>
+
+	<!-- BEGIN Java Script for this page -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+	<script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+	<script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js"></script>
+
+	<!-- Counter-Up-->
+	<script src="assets/plugins/waypoints/lib/jquery.waypoints.min.js"></script>
+	<script src="assets/plugins/counterup/jquery.counterup.min.js"></script>
+
+	<script>
+		$(document).ready(function () {
+			// data-tables
+			$('#example1').DataTable();
+
+			// counter-up
+			$('.counter').counterUp({
+				delay: 10,
+				time: 600
+			});
+		});		
+	</script>
+
+	<script>
+		var ctx1 = document.getElementById("lineChart").getContext('2d');
+		var lineChart = new Chart(ctx1, {
+			type: 'bar',
+			data: {
+				labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+				datasets: [{
+					label: '2020',
+					backgroundColor: '#3EB9DC',
+					data: [10, 14, 6, 7, 0, 0, 0, 0, 0, 0, 0, 0]
+				}, {
+					label: '2019',
+					backgroundColor: '#EBEFF3',
+					data: [12, 14, 6, 7, 13, 6, 13, 16, 10, 8, 11, 12]
+				}]
+
+			},
+			options: {
+				tooltips: {
+					mode: 'index',
+					intersect: false
+				},
+				responsive: true,
+				scales: {
+					xAxes: [{
+						stacked: true,
+					}],
+					yAxes: [{
+						stacked: true
+					}]
+				}
+			}
+		});
+
+
+		var ctx2 = document.getElementById("pieChart").getContext('2d');
+		var pieChart = new Chart(ctx2, {
+			type: 'pie',
+			data: {
+				datasets: [{
+					data: [12, 14, 6, 3],
+					backgroundColor: [
+						'rgba(255,99,132,1)',
+						'rgba(255, 206, 86, 1)',
+						'rgba(75, 192, 192, 1)',
+						'rgba(153, 102, 255, 1)'
+					],
+					label: '2020'
+				}],
+				labels: [
+					"标间",
+					"大床房",
+					"江景房",
+					"商务套房"
+				]
+			},
+			options: {
+				responsive: true
+			}
+
+		});
+
+
+		var ctx3 = document.getElementById("doughnutChart").getContext('2d');
+		var doughnutChart = new Chart(ctx3, {
+			type: 'doughnut',
+			data: {
+				datasets: [{
+					data: [8, 12, 18, 6],
+					backgroundColor: [
+						'rgba(255,99,132,1)',
+						'rgba(54, 162, 235, 1)',
+						'rgba(255, 206, 86, 1)',
+						'rgba(75, 192, 192, 1)',
+					],
+					label: 'Dataset 1'
+				}],
+				labels: [
+					"under18",
+					"18-30",
+					"30-70",
+					"above70"
+				]
+			},
+			options: {
+				responsive: true
+			}
+
+		});
+	</script>
+	<!-- END Java Script for this page -->
+
+</body>
+
+</html>
